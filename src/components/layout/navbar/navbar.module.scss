@@ -1,0 +1,6 @@
+@use '../variables.scss' as variables;
+
+.nav_bar {
+  display: flex;
+  height: variables.$navbar-height;
+}
