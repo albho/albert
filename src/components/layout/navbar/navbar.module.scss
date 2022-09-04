@@ -1,6 +1,7 @@
-@use '../variables.scss' as variables;
+@use '../../../../styles/constants/layout.scss' as layout;
 
 .nav_bar {
   display: flex;
-  height: variables.$navbar-height;
+  align-items: center;
+  height: layout.$navbar-height;
 }

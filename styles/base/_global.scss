@@ -1,0 +1,7 @@
+@use './palette.scss' as palette;
+
+a,
+a:visited {
+  color: palette.$font-color-dark--1;
+  text-decoration: none;
+}

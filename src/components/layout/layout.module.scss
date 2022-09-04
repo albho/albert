@@ -1,0 +1,5 @@
+@use '../../../styles//constants/layout' as layout;
+
+.layout {
+  min-height: calc(100vh - layout.$navbar-height);
+}
