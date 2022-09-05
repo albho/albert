@@ -1,4 +1,29 @@
-@use './palette.scss' as palette;
+@use './palette.scss';
+
+@mixin layout-container {
+  // Mobile
+  padding: 0 1rem;
+
+  // Tablets
+  @media screen and (min-width: 481px) {
+    padding: 0 2rem;
+  }
+
+  // Laptops
+  @media screen and (min-width: 769px) {
+    padding: 0 3rem;
+  }
+
+  // Desktops
+  @media screen and (min-width: 1025px) {
+    padding: 0 5rem;
+  }
+
+  // TVs
+  @media screen and (min-width: 1201px) {
+    padding: 0 8rem;
+  }
+}
 
 a,
 a:visited {

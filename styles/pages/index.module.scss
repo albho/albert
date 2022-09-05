@@ -1,0 +1,5 @@
+@use '../base/global';
+
+.index {
+  @include global.layout-container;
+}

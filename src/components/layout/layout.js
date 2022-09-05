@@ -2,10 +2,10 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 // Layout components
-import NavBar from './navbar/navbar';
+import NavBar from './navbar';
 
 // Stylesheets
-import * as styles from './layout.module.scss';
+import * as styles from '/styles/layout/layout.module.scss';
 
 const Layout = ({ children }) => {
   return (
