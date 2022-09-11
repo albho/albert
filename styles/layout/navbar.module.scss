@@ -1,8 +1,6 @@
 @use './constants';
-@use '../base/global';
 
 .navbar {
-  @include global.layout-container;
   display: flex;
   align-items: center;
   height: constants.$navbar-height;

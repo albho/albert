@@ -1,7 +1,10 @@
 @use './constants';
 
 .layout {
-  min-height: calc(100vh - constants.$navbar-height);
+  min-height: 100vh;
+  max-width: 1025px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .main_wrapper {

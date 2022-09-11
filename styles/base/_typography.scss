@@ -30,13 +30,6 @@
   --body-line-height: 1.6;
 }
 
-@media screen and (min-width: 769px) {
-  :root {
-    --text-base-size: 1.25em;
-    --text-scale-ratio: 1.25;
-  }
-}
-
 body {
   font-size: var(--text-base-size);
 }
