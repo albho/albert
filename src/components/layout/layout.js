@@ -5,11 +5,11 @@ import { Helmet } from 'react-helmet';
 import NavBar from './navbar';
 
 // Stylesheets
-import * as styles from '/styles/layout/layout.module.scss';
+import { layout, main_wrapper } from '/styles/layout/layout.module.scss';
 
 const Layout = ({ children }) => {
   return (
-    <div className={styles.layout}>
+    <div className={layout}>
       <Helmet>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
         />
       </Helmet>
       <NavBar />
-      {children}
+      <main className={main_wrapper}>{children}</main>
     </div>
   );
 };

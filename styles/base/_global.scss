@@ -1,5 +1,3 @@
-@use './palette.scss';
-
 @mixin layout-container {
   // Mobile
   padding: 0 1rem;
@@ -23,10 +21,4 @@
   @media screen and (min-width: 1201px) {
     padding: 0 8rem;
   }
-}
-
-a,
-a:visited {
-  color: palette.$font-color-dark--1;
-  text-decoration: none;
 }
