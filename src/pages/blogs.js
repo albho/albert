@@ -4,9 +4,6 @@ import { useStaticQuery } from 'gatsby';
 
 import { blog_post } from '/styles/pages/blogs.module.scss';
 
-import Search from '../components/algolia/blogs';
-const searchIndices = [{ name: `blogs` }];
-
 const Blogs = () => {
   const data = useStaticQuery(graphql`
     query BlogsQuery {
@@ -37,7 +34,6 @@ const Blogs = () => {
   return (
     <div>
       <h1>Blogs</h1>
-      <Search indices={searchIndices} />
       {blogsList}
     </div>
   );
