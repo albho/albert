@@ -3,8 +3,7 @@ import React from 'react';
 const IndexPage = () => {
   return (
     <div>
-      <h1>Hi, I'm Albert</h1>
-      <p>I'm a web developer.</p>
+      <h1>Hello</h1>
     </div>
   );
 };

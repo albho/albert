@@ -6,6 +6,8 @@ const Projects = () => {
     <div>
       <h1>Projects</h1>
       <Link to="/projects/porcupine">Porcupine</Link>
+      <Link to="/projects/leopard">Leopard</Link>
+      <Link to="/projects/cheetah">Cheetah</Link>
     </div>
   );
 };

@@ -1,9 +1,7 @@
-import React, { useEffect, useRef } from 'react'; // remove useState
+import React, { useEffect } from 'react'; // remove useState
 import { usePorcupine } from '@picovoice/porcupine-react';
 
 const PorcupineDemo = () => {
-  const componentRef = useRef(null);
-
   const {
     // comment out unused to prevent warnings
     keywordDetection,
@@ -51,7 +49,7 @@ const PorcupineDemo = () => {
   }, [keywordDetection]);
 
   return (
-    <div ref={componentRef}>
+    <div>
       <button
         onClick={() => start()}
         disabled={error !== null || !isLoaded || isListening}
