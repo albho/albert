@@ -5,7 +5,7 @@ import { useStaticQuery } from 'gatsby';
 import {
   blog_post,
   header_container,
-  text_light
+  text_light,
 } from '../../styles/pages/blogs.module.scss';
 
 const Blog = () => {
@@ -31,8 +31,8 @@ const Blog = () => {
     return (
       <Link key={title} className={blog_post} to={path}>
         <div className={header_container}>
-          <h2>{title}</h2>
           <p className={text_light}>{date}</p>
+          <h2>{title}</h2>
         </div>
         <p className={text_light}>{description}</p>
       </Link>

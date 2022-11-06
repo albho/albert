@@ -1,5 +1,6 @@
 @use '../base/spacing';
 @use '../base/palette';
+@use '../base/breakpoints';
 
 .blog_post {
   display: block;
@@ -14,9 +15,12 @@
 }
 
 .header_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  @media only screen and (min-width: breakpoints.$md) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .text_light {
