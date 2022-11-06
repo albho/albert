@@ -1,12 +1,8 @@
 @use './constants';
-
-.layout {
-  min-height: 100vh;
-  max-width: 1025px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
+@use '../base/spacing.scss';
 
 .main_wrapper {
-  margin: 0 0.5rem;
+  margin: spacing.$space-xxxl auto;
+  padding: 0 spacing.$space-lg;
+  max-width: constants.$page-max-width;
 }

@@ -5,6 +5,7 @@ const PageNotFound = () => {
   return (
     <main>
       404
+      <br />
       <Link to="/">Return to Home</Link>
     </main>
   );

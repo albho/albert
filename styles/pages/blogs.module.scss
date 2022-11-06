@@ -1,7 +1,30 @@
+@use '../base/spacing';
+@use '../base/palette';
+
 .blog_post {
   display: block;
-  margin-top: 1rem;
-  border: 1px solid lightgrey;
-  border-radius: 0.25rem;
-  padding: 0.5rem;
+  text-decoration: none;
+  margin-top: spacing.$space-md;
+  padding-left: spacing.$space-md;
+  border-left: 2px solid palette.$primary-light-2;
+
+  &:hover {
+    border-left-color: palette.$primary-light-3;
+  }
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.text_light {
+  color: palette.$font-color-lightmode-2;
+}
+
+:global(body.dark) {
+  .text_light {
+    color: palette.$font-color-darkmode-2;
+  }
 }

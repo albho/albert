@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import { MDXProvider } from '@mdx-js/react';
 import { Link } from 'gatsby';
 
-const shortcodes = { Link }; // Provide common components here
+const shortcodes = { Link };
 
 const PageTemplate = ({ data, children }) => {
   return (
