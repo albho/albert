@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkalbert=self.webpackChunkalbert||[]).push([[678],{6558:function(e,l,t){t.r(l);var n=t(7294);l.default=function(){return n.createElement("div",null,n.createElement("h1",null,"Hi, I'm Albert"),n.createElement("p",null,"I'm a web developer."))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-3d8459eed56040e195d9.js.map

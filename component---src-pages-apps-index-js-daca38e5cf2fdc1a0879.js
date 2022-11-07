@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkalbert=self.webpackChunkalbert||[]).push([[835],{8305:function(e,t,n){n.r(t);var r=n(7294),l=n(1597);t.default=function(){return r.createElement("div",null,r.createElement("h1",null,"Apps"),r.createElement(l.rU,{to:"/apps/porcupine"},"Porcupine"))}}}]);
+//# sourceMappingURL=component---src-pages-apps-index-js-daca38e5cf2fdc1a0879.js.map
