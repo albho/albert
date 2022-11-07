@@ -1,9 +1,11 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { MDXProvider } from '@mdx-js/react';
-import { Link } from 'gatsby';
 
-const shortcodes = { Link };
+// Components
+import CodeBlock from '../components/code_block';
+
+const shortcodes = { Link, pre: props => CodeBlock(props) };
 
 const PageTemplate = ({ data, children }) => {
   return (
