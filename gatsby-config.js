@@ -3,9 +3,10 @@ require('dotenv').config({
 });
 
 module.exports = {
+  pathPrefix: '/albert',
   siteMetadata: {
     title: `albert`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://albho.github.io/albert/`,
   },
   plugins: [
     'gatsby-plugin-sass',
