@@ -1,0 +1,24 @@
+@use './global/palette';
+@use './global/constants';
+@use './global/spacing';
+
+.demo {
+  margin: spacing.$space-md 0;
+  padding: spacing.$space-md;
+  border: 1px solid palette.$line-lightmode;
+  border-radius: constants.$border-radius-sm;
+
+  * {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  &.notification-factory {
+    button {
+      margin-left: spacing.$space-md;
+    }
+
+    input {
+      margin-top: spacing.$space-xxs;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@use '../../styles/global/spacing';
+
+.blog-template {
+  h1 {
+    margin-bottom: spacing.$space-xxl;
+  }
+
+  h2 {
+    margin: spacing.$space-xl 0 spacing.$space-md;
+  }
+}

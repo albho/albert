@@ -25,6 +25,7 @@ const Layout = ({ children }) => {
           src="https://kit.fontawesome.com/74850bafa2.js"
           crossOrigin="anonymous"
         ></script>
+        <title>Albert's Website</title>
       </Helmet>
       <NavBar />
       <main className={main_wrapper}>{children}</main>

@@ -5,14 +5,24 @@ import { MDXProvider } from '@mdx-js/react';
 // Components
 import CodeBlock from '../components/code_block';
 
-const shortcodes = { Link, pre: props => CodeBlock(props) };
+// Demos
+import NotificationFactory from '../components/demos/notification_factory';
+
+// Stylesheets
+import './blog.scss';
+
+const shortcodes = {
+  Link,
+  pre: props => CodeBlock(props),
+  NotificationFactory,
+};
 
 const PageTemplate = ({ data, children }) => {
   return (
-    <>
+    <div className="blog-template">
       <h1>{data.mdx.frontmatter.title}</h1>
       <MDXProvider components={shortcodes}>{children}</MDXProvider>
-    </>
+    </div>
   );
 };
 
