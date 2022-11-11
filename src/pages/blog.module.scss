@@ -1,0 +1,34 @@
+@use '../../styles/global/spacing';
+@use '../../styles/global/palette';
+@use '../../styles/global/breakpoints';
+
+.blog_post {
+  display: block;
+  text-decoration: none;
+  margin-top: spacing.$space-md;
+  padding-left: spacing.$space-md;
+  border-left: 2px solid palette.$primary-light-2;
+
+  &:hover {
+    border-left-color: palette.$primary-light-3;
+  }
+}
+
+.header_container {
+  @media only screen and (min-width: breakpoints.$md) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.text_light {
+  color: palette.$font-color-lightmode-2;
+}
+
+:global(body.dark) {
+  .text_light {
+    color: palette.$font-color-darkmode-2;
+  }
+}

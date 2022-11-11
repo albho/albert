@@ -1,0 +1,66 @@
+@use '../../../styles/global/constants';
+@use '../../../styles/global/spacing';
+@use '../../../styles/global/palette';
+
+.navbar_container {
+  border-bottom: 1px solid palette.$line-lightmode;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 spacing.$space-lg;
+  height: constants.$navbar-height;
+  max-width: constants.$page-max-width;
+}
+
+.navbar_link {
+  font-weight: bold;
+  text-decoration: none;
+  color: palette.$font-color-lightmode-1;
+  padding-right: spacing.$space-lg;
+
+  &:hover {
+    opacity: constants.$hover-opacity;
+  }
+}
+
+.theme_toggler_button {
+  font-size: 1rem;
+  aspect-ratio: 1;
+  width: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  border: none;
+  color: palette.$font-color-lightmode-1;
+  padding: spacing.$space-xxs spacing.$space-sm;
+  border-radius: constants.$border-radius-sm;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+    background-color: palette.$primary-light-2;
+    opacity: constants.$hover-opacity;
+  }
+}
+
+:global(body.dark) {
+  .navbar_container {
+    border-bottom: 1px solid palette.$line-darkmode;
+  }
+
+  .navbar_link {
+    color: palette.$font-color-darkmode-1;
+  }
+
+  .theme_toggler_button {
+    color: palette.$font-color-darkmode-1;
+
+    &:hover {
+      background-color: palette.$primary-dark-3;
+    }
+  }
+}

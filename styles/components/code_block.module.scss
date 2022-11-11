@@ -1,8 +1,0 @@
-@use '../../styles/base/spacing';
-@use '../../styles/layout/constants';
-
-.code_block {
-  padding: spacing.$space-md;
-  margin: spacing.$space-md 0;
-  border-radius: constants.$border-radius-sm;
-}

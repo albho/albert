@@ -1,0 +1,9 @@
+@use './breakpoints';
+
+// Page
+$navbar-height: 4rem;
+$page-max-width: breakpoints.$lg;
+
+// Components
+$border-radius-sm: 0.25rem;
+$hover-opacity: 0.8;

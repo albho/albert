@@ -1,0 +1,8 @@
+@use '../../../styles/global/constants';
+@use '../../../styles/global/spacing.scss';
+
+.main_wrapper {
+  margin: spacing.$space-xxxl auto;
+  padding: 0 spacing.$space-lg;
+  max-width: constants.$page-max-width;
+}

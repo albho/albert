@@ -1,0 +1,17 @@
+@use './global/palette';
+
+body {
+  background-color: palette.$primary-light-1;
+
+  *:not([class]) {
+    color: palette.$font-color-lightmode-1;
+  }
+}
+
+body.dark {
+  background-color: palette.$primary-dark-1;
+
+  *:not([class]) {
+    color: palette.$font-color-darkmode-1;
+  }
+}

@@ -3,7 +3,7 @@ import Highlight, { defaultProps } from 'prism-react-renderer';
 import nightOwl from 'prism-react-renderer/themes/nightOwl';
 
 // Styles
-import { code_block } from '../../styles/components/code_block.module.scss';
+import { code_block } from './code_block.module.scss';
 
 const CodeBlock = props => {
   const className = props.children.props.className || '';
