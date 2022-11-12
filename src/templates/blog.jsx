@@ -7,6 +7,7 @@ import CodeBlock from '../components/code_block';
 
 // Demos
 import NotificationFactory from '../components/demos/notification_factory';
+import StateSingleton from '../components/demos/state_singleton';
 
 // Stylesheets
 import './blog.scss';
@@ -15,6 +16,7 @@ const shortcodes = {
   Link,
   pre: props => CodeBlock(props),
   NotificationFactory,
+  StateSingleton,
 };
 
 const PageTemplate = ({ data, children }) => {
