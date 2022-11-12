@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkalbert=self.webpackChunkalbert||[]).push([[845],{5336:function(e,t,l){l.r(t);var n=l(7294);t.default=function(){return n.createElement("div",null,n.createElement("h1",null,"Projects"))}}}]);
+//# sourceMappingURL=component---src-pages-projects-index-tsx-93a66fa502e2007004de.js.map
