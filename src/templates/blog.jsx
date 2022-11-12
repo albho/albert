@@ -8,6 +8,7 @@ import CodeBlock from '../components/code_block';
 // Demos
 import NotificationFactory from '../components/demos/notification_factory';
 import StateSingleton from '../components/demos/state_singleton';
+import ShoeDecorator from '../components/demos/shoe_decorator';
 
 // Stylesheets
 import './blog.scss';
@@ -17,6 +18,7 @@ const shortcodes = {
   pre: props => CodeBlock(props),
   NotificationFactory,
   StateSingleton,
+  ShoeDecorator,
 };
 
 const PageTemplate = ({ data, children }) => {

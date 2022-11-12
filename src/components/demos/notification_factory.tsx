@@ -19,14 +19,14 @@ function successNotification(message) {
 }
 
 function failureNotification(message) {
-  this.message = message;
   this.type = NotificationCategory.FAILURE;
+  this.message = message;
   this.timestamp = JSON.stringify(Date.now());
 }
 
 function defaultNotification(message) {
-  this.message = message;
   this.type = NotificationCategory.DEFAULT;
+  this.message = message;
   this.timestamp = JSON.stringify(Date.now());
 }
 

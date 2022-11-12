@@ -1,5 +1,5 @@
 ---
-path: /blog/singleton-design-patterns/
+path: /blog/singleton-design-pattern/
 date: 2022-11-11
 title: Singleton Design Pattern
 description: Software Design Patterns - JS/TS, Functional Programming
@@ -11,4 +11,29 @@ The singleton design pattern is a creational design pattern.
 
 <StateSingleton />
 
-[See Code](https://github.com/albho/albert/tree/main/src/components/demos/state_singleton.tsx)
+```javascript
+class ApplicationState {
+  constructor() {
+    if (ApplicationState.instance === undefined) {
+      this.state = 'OFF';
+      ApplicationState.instance = this;
+    }
+
+    return ApplicationState.instance;
+  }
+
+  toggleState() {
+    if (this.state === 'ON') {
+      this.state = 'OFF';
+    } else {
+      this.state = 'ON';
+    }
+  }
+
+  getState() {
+    return this.state;
+  }
+}
+```
+
+[Full Code Example (in TS)](https://github.com/albho/albert/tree/main/src/components/demos/state_singleton.tsx)

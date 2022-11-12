@@ -1,5 +1,5 @@
 ---
-path: /blog/factory-design-patterns/
+path: /blog/factory-design-pattern/
 date: 2022-11-11
 title: Factory Design Pattern
 description: Software Design Patterns - JS/TS, Functional Programming
@@ -11,4 +11,32 @@ The factory design pattern is a creational design pattern.
 
 <NotificationFactory />
 
-[See Code](https://github.com/albho/albert/tree/main/src/components/demos/notification_factory.tsx)
+```javascript
+function successNotification(message) {
+  this.type = 'SUCCESS';
+  this.message = message;
+}
+
+function failureNotification(message) {
+  this.type = 'FAILURE';
+  this.message = message;
+}
+
+function defaultNotification(message) {
+  this.type = 'DEFAULT';
+  this.message = message;
+}
+
+function addNotification(type, message) {
+  switch (type) {
+    case 'SUCCESS':
+      return new successNotification(message);
+    case 'FAILURE':
+      return new failureNotification(message);
+    default:
+      return new defaultNotification(message);
+  }
+}
+```
+
+[Full Code Example (in TS)](https://github.com/albho/albert/tree/main/src/components/demos/notification_factory.tsx)

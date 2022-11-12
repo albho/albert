@@ -1,0 +1,65 @@
+---
+path: /blog/decorator-design-pattern/
+date: 2022-11-12
+title: Decorator Design Pattern
+description: Software Design Patterns - JS/TS, Functional Programming
+---
+
+The decorator design pattern is a structural design pattern.
+
+## Demo
+
+<ShoeDecorator />
+
+```javascript
+abstract class Shoe {
+  public name;
+
+  public getName(): string {
+    return this.name;
+  }
+
+  public features(): string[] {
+    return [''];
+  }
+}
+
+abstract class ShoeFeatures extends Shoe {
+  decoratedShoe;
+  public abstract features();
+}
+
+class Shoe1 extends Shoe {
+  public name = 'Shoe 1';
+}
+
+class Shoe2 extends Shoe {
+  public name = 'Shoe 2';
+}
+
+class WaterproofFeature extends ShoeFeatures {
+  constructor(shoe) {
+    super();
+    this.name = shoe.name;
+    this.decoratedShoe = shoe;
+  }
+
+  public features() {
+    return [...this.decoratedShoe.features(), 'Waterproof'];
+  }
+}
+
+class GoretexFeature extends ShoeFeatures {
+  constructor(shoe) {
+    super();
+    this.name = shoe.name;
+    this.decoratedShoe = shoe;
+  }
+
+  public features() {
+    return [...this.decoratedShoe.features(), 'Goretex'];
+  }
+}
+```
+
+[Full Code Example (in TS)](https://github.com/albho/albert/tree/main/src/components/demos/shoe_decorator.tsx)
