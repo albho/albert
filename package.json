@@ -18,6 +18,9 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.1.5",
+    "@picovoice/porcupine-react": "^2.1.7",
+    "@picovoice/rhino-react": "^2.1.6",
+    "@picovoice/web-voice-processor": "^4.0.2",
     "@types/react-helmet": "^6.1.5",
     "dotenv": "^8.6.0",
     "gatsby": "^4.22.0",
@@ -32,6 +35,7 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-helmet": "^6.1.0",
+    "react-youtube": "^10.0.0",
     "sass": "^1.54.8"
   },
   "devDependencies": {
